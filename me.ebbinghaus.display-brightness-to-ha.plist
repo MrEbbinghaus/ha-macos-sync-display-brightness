@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>me.ebbinghaus.display-brightness-to-ha</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>zsh</string>
+      <string>-c</string>
+      <string>source /Users/bjebb/.zsh/secrets.zsh; /opt/homebrew/bin/bb /Users/bjebb/Developer/playground/display-brightness-to-ha/display_brightness_to_ha.bb</string>
+    </array>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>PATH</key>
+      <string>/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/bjebb/.local/bin</string>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>KeepAlive</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/display-brightness-to-ha.out</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/display-brightness-to-ha.err</string>
+  </dict>
+</plist>
