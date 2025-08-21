@@ -2,6 +2,10 @@
 
 Listens to [lunar](https://lunar.fyi) for changes in display brightness and publishes the value to a [Home Assistant](https://www.home-assistant.io/) `input_number` entity using [HAs REST API](https://developers.home-assistant.io/docs/api/rest/).
 
+<p align="center">
+  <img src="display-brightness-demo.gif" alt="Demo showing that the macOS screen brightness UI changes with the value of a Home Assistant sensor.">
+</p>
+
 ## Todo
 - [ ] Implement bidirectional sync
 - [ ] Don't depend on lunar.
